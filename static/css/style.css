@@ -1,0 +1,17 @@
+.container, .titulo{
+    display: flex;
+    justify-content: center;
+}
+
+td{
+    width: 50px;
+    height: 50px;
+}
+
+.cuadro1{
+    background-color: rgb(175, 130, 218);
+}
+
+.cuadro2{
+    background-color: rgb(143, 236, 236);
+}

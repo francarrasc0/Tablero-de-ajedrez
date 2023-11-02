@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero de ajedrez</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
+</head>
+
+<body>
+    <h1 class="titulo">Tablero de ajedrez</h1>
+    <div class="container">
+        <table>
+            {% for i in range(num_1) %}
+            <tr>
+                {% for j in range(num_2) %}
+                <td class='cuadro{{(i+j)%2+1}}'></td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+</body>
+
+</html>
